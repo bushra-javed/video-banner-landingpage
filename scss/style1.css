@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+header div.toggle {
+  height: 50px;
+  display: none;
+  border: 1px solid red;
+}
+
+header div.toggle i {
+  display: block;
+  cursor: pointer;
+  float: right;
+  margin: 10px 40px;
+  color: red;
+  font: 700;
+}
+
+header nav {
+  background-color: green;
+  border: 1px solid red;
+  width: 100%;
+}
+
+header nav ul {
+  border: 1px solid red;
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header nav ul li {
+  border: 1px solid red;
+  list-style: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+header nav ul li:hover {
+  background-color: red;
+  color: #fff;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section.section2 {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid red;
+}
+
+section.section2 div.section2-div {
+  width: 80%;
+  margin: auto;
+  border: 1px solid gray;
+  overflow: hidden;
+}
+
+section.section2 div.section2-div h1 {
+  text-align: center;
+  color: red;
+}
+
+section.section2 div.section2-div div {
+  text-align: center;
+}
+
+section.section3 .section3-div {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 11px solid red;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.section3 .section3-div .section3-content {
+  width: 80%;
+  text-align: center;
+  color: red;
+}
+
+@media screen and (max-width: 755px) {
+  header div.toggle {
+    display: block;
+  }
+  header div.toggle i {
+    color: green;
+  }
+  header nav ul.active {
+    display: block;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav ul li {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style1.css.map */

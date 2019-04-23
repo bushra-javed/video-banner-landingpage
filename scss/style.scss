@@ -1,0 +1,195 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+$color-navbar-bg:Gray;
+$color-navbar-link:Black;
+$color-navbar-link-hover:Red;
+$color-navbar-brand:#fff;
+
+.top-bar-wrapper {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+
+    .item1 {
+        text-transform: uppercase;
+    }
+
+}
+
+header {
+    nav.navbar-custom {
+        background-color: $color-navbar-bg;
+        padding: 0;
+        border-top: 4px solid #666;
+        box-shadow: 1px 3px 4px #fff;
+        top: 60px;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+
+        .navbar-brand {
+            color: $color-navbar-brand;
+            height: 50px;
+            margin-left: 20px;
+            //border: 1px solid red;
+
+        }
+
+        button.navbar-toggler {
+            margin-right: 20px;
+        }
+
+        .navbar-nav {
+
+            .nav-item.active {
+                color: $color-navbar-link;
+                background-color: $color-navbar-link-hover;
+                height: 60px;
+                //margin-right: 20px;
+                text-align: center;
+                font-weight: 600;
+                letter-spacing: 2px;
+                line-height: 20px;
+                padding: 10px 35px 0 35px;
+            }
+
+
+
+            .nav-item {
+                color: $color-navbar-link;
+                height: 60px;
+                // margin-right: 20px;
+                text-align: center;
+                font-weight: 600;
+                letter-spacing: 2px;
+                line-height: 20px;
+                padding: 10px 35px 0 35px;
+
+                &:hover {
+
+                    background-color: $color-navbar-link-hover;
+                }
+            }
+
+        }
+
+
+    }
+
+    //    margin-bottom: 40px;
+}
+
+main {
+
+    section.section1-banner {
+
+        .banner {
+            margin-top: 130px;
+            height: 600px;
+            background-image: url("/images/image-from-rawpixel-id-2367-jpeg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            z-index: -9;
+
+            .bg-color {
+
+                background-color: rgba(0, 0, 0, .5);
+                height: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .banner-content {
+
+                    //overflow: hidden;
+                    padding: 4rem 4rem;
+                    width: 70%;
+                    color: #fff;
+                    text-align: center;
+                    border: 1px solid red;
+                    box-shadow: 1px 2px 4px 1px red;
+
+                    h1 {
+
+                        //   vertical-align: center;
+                    }
+
+                    p {
+                        margin-bottom: 40px;
+                    }
+
+                    a.button-class {
+                        color: red;
+                        //margin-top: 120px;
+                        border: 1px solid red;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding: 1rem 4rem;
+                        cursor: pointer;
+                        transition: all ease-in-out .53s;
+
+                        background-color: rgba($color: #fff, $alpha: 1.0);
+
+                        &:hover {
+                            background-color: rgba(255, 0, 0, .3);
+                            color: #fff;
+                            border: 1px solid #fff;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    section.section2 {
+        height: 600px;
+        // 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+        
+        div.section2-div {
+            width: 80%;
+            margin: auto;
+            border: 1px solid gray;
+            overflow: hidden;
+            
+            h1 {
+                text-align: center;
+                color: red;
+            }
+            
+            div {
+                
+                text-align: center;
+                
+            }
+        }
+        
+    }
+        section.section3 {
+            .section3-div {
+            height: 600px;
+            display: flex;
+            border: 11px solid red;
+            justify-content: center;
+            align-items: center;
+
+
+            .section3-content {
+                width: 80%;
+                text-align: center;
+                color: red;
+            }
+        }
+    }
+}

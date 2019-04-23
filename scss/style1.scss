@@ -1,0 +1,172 @@
+//@import "../node_modules/bootstrap/scss/bootstrap.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+
+
+    div.toggle {
+
+        height: 50px;
+        display: none;
+        border: 1px solid red;
+
+        i {
+            display: block;
+            cursor: pointer;
+            float: right;
+            margin: 10px 40px;
+            color: red;
+            font: 700;
+        }
+    }
+
+    nav {
+        background-color: green;
+        border: 1px solid red;
+
+        width: 100%;
+
+        ul {
+
+            border: 1px solid red;
+            list-style: none;
+            padding: 0;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+
+            li {
+                border: 1px solid red;
+                list-style: none;
+                padding: 20px;
+                display: inline-block;
+
+                &:hover {
+                    background-color: red;
+                    color: #fff;
+                }
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+}
+
+
+section.section2 {
+    height: 600px;
+    // 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+
+    div.section2-div {
+        width: 80%;
+        margin: auto;
+        border: 1px solid gray;
+        overflow: hidden;
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        div {
+
+            text-align: center;
+
+        }
+    }
+
+}
+
+section.section3 {
+    .section3-div {
+        height: 600px;
+        display: flex;
+        border: 11px solid red;
+        justify-content: center;
+        align-items: center;
+
+
+        .section3-content {
+            width: 80%;
+            text-align: center;
+            color: red;
+        }
+    }
+}
+
+@media screen and (max-width:755px) {
+
+    header {
+
+        div.toggle {
+            display: block;
+
+            i {
+                color: green;
+            }
+        }
+
+        nav {
+            ul.active {
+                display: block;
+            }
+
+            ul {
+                display: none;
+
+                li {
+                    display: block;
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+
+}
+
+// @media screen and (min-width:756px) {
+//     header {
+
+
+//         nav {
+
+
+//             div.menu-div {
+
+
+//                 ul.menu-bar {
+//                     display: flex;
+//                     display: block;
+
+//                     li {
+//                         display: inline-block;
+//                         flex: 1;
+
+//                         a {
+//                             display: block;
+//                             color: red;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
