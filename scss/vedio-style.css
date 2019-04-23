@@ -10619,7 +10619,6 @@ section.section .video-header header nav.navbar-custom {
   padding: 0;
   width: 100%;
   z-index: 999;
-  border: 1px solid #fff;
 }
 
 section.section .video-header header nav.navbar-custom .navbar-brand {
@@ -10679,8 +10678,9 @@ section.section .video-content {
   left: 0;
   text-align: center;
   font-family: "cookie";
-  color: red;
   color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
   height: 100%;
   width: 100%;
