@@ -10561,19 +10561,29 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.button-class, section.section .video-content button {
+body {
+  font-family: proxima-nova, Helvetica, Arial Unicode, sans-serif;
+}
+
+.button-class, section.section1 .video-content button {
+  outline: none;
   color: orangered;
-  border: 1px solid orangered;
+  border: transparent;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1rem 4rem;
   cursor: pointer;
   -webkit-transition: all ease-in-out .53s;
   transition: all ease-in-out .53s;
+  font-family: proxima-nova, Helvetica, Arial Unicode, sans-serif;
+  -webkit-box-shadow: 3px 3px 2px -5px #fff;
+          box-shadow: 3px 3px 2px -5px #fff;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
   background-color: white;
 }
 
-.button-class:hover, section.section .video-content button:hover {
+.button-class:hover, section.section1 .video-content button:hover {
   background-color: rgba(255, 68, 0, 0.322);
   color: #fff;
   border: 1px solid #fff;
@@ -10584,7 +10594,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
 }
 
-section.section {
+section.section1 {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -10597,7 +10607,7 @@ section.section {
   overflow: hidden;
 }
 
-section.section .video-header {
+section.section1 .video-header {
   padding: 0;
   position: absolute;
   top: 0;
@@ -10610,68 +10620,77 @@ section.section .video-header {
   width: 100%;
 }
 
-section.section .video-header header {
+section.section1 .video-header header {
   z-index: 999;
 }
 
-section.section .video-header header nav.navbar-custom {
+section.section1 .video-header header nav.navbar-custom {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 0;
   width: 100%;
   z-index: 999;
 }
 
-section.section .video-header header nav.navbar-custom .navbar-brand {
+section.section1 .video-header header nav.navbar-custom .navbar-brand {
   color: #fff;
-  height: 50px;
-  margin-left: 20px;
 }
 
-section.section .video-header header nav.navbar-custom .navbar-toggler-icon {
+section.section1 .video-header header nav.navbar-custom .navbar-brand img {
+  height: 2.5rem;
+}
+
+section.section1 .video-header header nav.navbar-custom .navbar-toggler-icon {
   color: #fff;
   font-size: 1.5rem;
   line-height: 1.5em;
   margin: auto;
 }
 
-section.section .video-header header nav.navbar-custom:focus, section.section .video-header header nav.navbar-custom:active {
+section.section1 .video-header header nav.navbar-custom:focus, section.section1 .video-header header nav.navbar-custom:active {
   outline: none;
 }
 
-section.section .video-header header nav.navbar-custom .navbar-nav .nav-item.active {
+section.section1 .video-header header nav.navbar-custom .navbar-nav .nav-item.active {
   height: 60px;
   text-align: center;
   font-weight: 600;
   letter-spacing: 2px;
-  line-height: 20px;
+  line-height: 40px;
   padding: 10px 35px 0 35px;
 }
 
-section.section .video-header header nav.navbar-custom .navbar-nav .nav-item.active a {
+section.section1 .video-header header nav.navbar-custom .navbar-nav .nav-item.active a {
   color: #fff;
 }
 
-section.section .video-header header nav.navbar-custom .navbar-nav .nav-item {
+section.section1 .video-header header nav.navbar-custom .navbar-nav .nav-item {
   color: #fff;
   height: 70px;
   text-align: center;
   font-weight: 600;
   letter-spacing: 2px;
-  line-height: 20px;
+  line-height: 40px;
   padding: 10px 35px 0 35px;
 }
 
-section.section .video-header header nav.navbar-custom .navbar-nav .nav-item a {
+section.section1 .video-header header nav.navbar-custom .navbar-nav .nav-item a {
   font-family: proxima-nova, Helvetica, Arial Unicode, sans-serif;
   color: #fff;
   letter-spacing: .2rem;
 }
 
-section.section .video-header header nav.navbar-custom .navbar-nav .nav-item:hover {
+section.section1 .video-header header nav.navbar-custom .navbar-nav .nav-item:hover {
   background-color: #333;
 }
 
-section.section .video-content {
+section.section1 .video-header header nav.navbar-custom .navbar-nav .dropdown .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: -2px;
+  border-radius: 0;
+  padding: 20px 20px;
+}
+
+section.section1 .video-content {
   padding: 0;
   position: absolute;
   top: 70px;
@@ -10681,6 +10700,7 @@ section.section .video-content {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.3);
   background-color: rgba(0, 0, 0, 0.3);
+  font-family: proxima-nova, Helvetica, Arial Unicode, sans-serif;
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -10695,15 +10715,171 @@ section.section .video-content {
           align-items: center;
 }
 
-section.section .video-content h1 {
+section.section1 .video-content h1 {
   color: orangered;
 }
 
-section.section .video-content p {
+section.section1 .video-content p {
   font-size: 2rem;
 }
 
-section.section .video-container {
+section.section1 .video-container {
   position: absolute;
+}
+
+section.section2 .section2-wrapper .section2-bgcolor {
+  background-color: #f3f2ee;
+  padding: 3rem;
+}
+
+section.section2 .section2-wrapper .section2-bgcolor .section2-content .section2-part {
+  margin-top: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+section.section2 .section2-wrapper .section2-bgcolor .section2-content .section2-part div.section2-part-header {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+section.section2 .section2-wrapper .section2-bgcolor .section2-content .section2-part div.section2-part-header i {
+  color: blue;
+  font-size: 3rem;
+}
+
+section.section2 .section2-wrapper .section2-bgcolor .section2-content .section2-part div.section2-part-header span.heading {
+  display: inline;
+  font-size: 2rem;
+  color: #80673e;
+  color: #c6bba8;
+}
+
+section.section2 .section2-wrapper .section2-bgcolor .section2-content .section2-part p {
+  padding: 1rem;
+}
+
+section.section3 .section3-wrapper {
+  background-color: #f3f2ee;
+}
+
+section.section3 .section3-wrapper .section3-bgcolor {
+  background-color: #341f0f;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+section.section3 .section3-wrapper .section3-part-header {
+  width: 80%;
+  margin: auto;
+}
+
+section.section3 .section3-wrapper .section3-part-header h1 {
+  padding-bottom: 2rem;
+}
+
+section.section3 .section3-wrapper .section3-part-header p {
+  font-size: 2rem;
+}
+
+section.section3 .section3-wrapper .section3-brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.section3 .section3-wrapper .section3-brands .img-button {
+  outline: none;
+  border: 1px solid tranparent;
+}
+
+section.section3 .section3-wrapper .section3-brands img {
+  border-radius: .5rem;
+  height: 5rem;
+  width: 5rem;
+  margin: 2rem;
+}
+
+section.section3 .section3-wrapper .section3-brands img:hover {
+  -webkit-box-shadow: 0 0 12px -1px #9b9991;
+          box-shadow: 0 0 12px -1px #9b9991;
+}
+
+section.section3 .section3-wrapper .section3-brands div.modal .modal-content .modal-body {
+  overflow: hidden;
+}
+
+section.section3 .section3-wrapper .section3-brands div.modal .modal-content .modal-body img.modal-img {
+  margin: 0;
+  padding: 0 !important;
+  width: 100%;
+  height: auto;
+}
+
+.section4 {
+  padding: 3rem 1rem;
+}
+
+.section4 .section4-part h1 {
+  text-align: center;
+}
+
+.section4 .section4-part p {
+  text-align: justify;
+}
+
+.section4 img {
+  -webkit-box-shadow: 0 0 12px -1px #9b9991;
+          box-shadow: 0 0 12px -1px #9b9991;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+@media only screen and (max-width: 755px) {
+  html {
+    font-size: 11px;
+  }
+  html span.heading {
+    color: red;
+  }
+}
+
+.footer {
+  padding: 2rem;
+  background-color: #341f0f;
+  color: #fff;
+  text-align: center;
+}
+
+@media only screen and (min-width: 756px) {
+  html {
+    font-size: 14px;
+  }
+  html span.heading {
+    color: black;
+    color: green;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+  html span.heading {
+    color: black;
+  }
 }
 /*# sourceMappingURL=vedio-style.css.map */
