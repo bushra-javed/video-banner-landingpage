@@ -10848,15 +10848,15 @@ section.section3 .section3-wrapper .section3-brands div.modal .modal-content .mo
   border-radius: .5rem;
 }
 
-section.section5-banner .banner {
+section.section5 .section5-banner {
   height: 600px;
-  background-image: url("/images/image-from-rawpixel-id-2367-jpeg.jpg");
+  background-image: url("/images/imagewomen.jpg");
   background-size: cover;
   background-attachment: fixed;
   z-index: -9;
 }
 
-section.section5-banner .banner .bg-color {
+section.section5 .section5-banner .section5-bg-color {
   background-color: rgba(0, 0, 0, 0.5);
   height: 600px;
   display: -webkit-box;
@@ -10870,7 +10870,7 @@ section.section5-banner .banner .bg-color {
           align-items: center;
 }
 
-section.section5-banner .banner .bg-color .banner-content {
+section.section5 .section5-banner .section5-bg-color .section5-banner-content {
   padding: 4rem 4rem;
   width: 70%;
   color: #fff;
@@ -10879,11 +10879,11 @@ section.section5-banner .banner .bg-color .banner-content {
           box-shadow: 1px 2px 4px 1px #fff;
 }
 
-section.section5-banner .banner .bg-color .banner-content p {
+section.section5 .section5-banner .section5-bg-color .section5-banner-content p {
   margin-bottom: 40px;
 }
 
-section.section5-banner .banner .bg-color .banner-content a.button-class {
+section.section5 .section5-banner .section5-bg-color .section5-banner-content a.button-class {
   color: red;
   border: 1px solid red;
   text-transform: uppercase;
@@ -10895,7 +10895,7 @@ section.section5-banner .banner .bg-color .banner-content a.button-class {
   background-color: white;
 }
 
-section.section5-banner .banner .bg-color .banner-content a.button-class:hover {
+section.section5 .section5-banner .section5-bg-color .section5-banner-content a.button-class:hover {
   background-color: rgba(255, 0, 0, 0.3);
   color: #fff;
   border: 1px solid #fff;
